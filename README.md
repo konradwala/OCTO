@@ -61,3 +61,22 @@ This project involves the design, construction, and control of a 6-axis robotic 
 
 ## Repository Structure
 
+/3D_models - Contains 3D models for robot components (Fusion 360 files). /pcb_designs - PCB schematics and layouts for the stepper motor drivers. /software - Python scripts for controlling the robotic arm (ROS-based). /firmware - ATmega328P firmware for controlling the stepper motors via A4988. /docs - Documentation, including the project overview and kinematic calculations.
+
+## How to Use
+
+1. **Build the hardware**: Follow the assembly instructions in the `/docs` folder to 3D-print and assemble the robot.
+2. **Flash the firmware**: Upload the firmware to the ATmega328P on the stepper motor driver boards.
+3. **Set up ROS**: Install ROS on Raspberry Pi and configure it to communicate with the CAN network.
+4. **Control the robot**: Use the provided Python scripts to control the robot via the live 3D model or predefined motion paths.
+
+## Contributing
+
+Feel free to contribute by:
+- Improving the control algorithms.
+- Suggesting optimizations for the PCB design.
+- Adding features to the kinematic model.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
